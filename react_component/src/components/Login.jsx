@@ -1,13 +1,21 @@
+import Input from "./Input";
 const Login = () => {
     return (
         <form className="">
-            <label htmlFor="ID">ID</label>
-            <input type="text" placeholder="Enter Id"></input><br />
-            <label htmlFor="Password" >Password</label>
-            <input type="text" placeholder="Enter password"></input><br />
+            <Input
+                labelText="ID"
+                inputPlaceholder="Enter ID"
+                inputType = "text"
+            />
+            <Input
+                labelText="Password"
+                inputPlaceholder="Enter Password"
+                inputType = "password"
+            />
+
             <button type="submit">Submit</button>
         </form>
-    );
+    ); 
 }
 
 export default Login;
